@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 st.markdown("""
     <style>
     .stApp {
-        background-color: #000000;
+        background-color: #ffffff;
         padding: 2rem;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -24,25 +24,31 @@ st.markdown("""
     .block-container {
         padding: 2rem;
     }
-    h1 {
-        color: #004b8d;
+    h1, h2, h3, h4, h5, h6 {
+        color: #000000;
         text-align: center;
+        font-size: 24px;
     }
     label {
         font-weight: bold;
-        color: #ffffff;
+        color: #000000;
+        font-size: 18px;
     }
     .stButton>button {
         background-color: #004b8d;
         color: white;
-        font-size: 16px;
-        padding: 10px 20px;
+        font-size: 18px;
+        padding: 12px 24px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
     .stButton>button:hover {
         background-color: #003366;
+    }
+    body, p, div, span {
+        color: #000000;
+        font-size: 18px;
     }
     </style>
 """, unsafe_allow_html=True)
