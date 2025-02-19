@@ -87,6 +87,24 @@ st.markdown("""
         color: #212529;
     }
 
+        /* Gaya Selectbox */
+    .stSelectbox div[data-baseweb="select"] {
+        color: #ffffff !important; /* Warna teks putih */
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Gaya untuk pilihan dalam Selectbox */
+    .stSelectbox div[data-baseweb="select"] div {
+        background-color: #333333 !important; /* Latar belakang gelap */
+        color: #ffffff !important; /* Warna teks putih */
+    }
+
+    /* Dropdown items */
+    .stSelectbox div[data-baseweb="select"] span {
+        color: #ffffff !important; /* Warna teks putih dalam dropdown */
+    }
+
     </style>
 """, unsafe_allow_html=True)
 
