@@ -83,7 +83,7 @@ with col2:
     cholesterol_triglycerides = st.number_input('Triglycerida (mg/dL)', min_value=50.0, max_value=400.0, format="%.2f")
     ACE_inhibitors = st.selectbox('Penggunaan ACE Inhibitors (0: Tidak, 1: Ya)', [0, 1])
     diuretics = st.selectbox('Penggunaan Diuretik (0: Tidak, 1: Ya)', [0, 1])
-    NSAIDs_use = st.selectbox('Penggunaan NSAIDs (0-10)', min_value=0, max_value=10)
+    NSAIDs_use = st.number_input('Penggunaan NSAIDs (0-10)', min_value=0, max_value=10)
     statins = st.selectbox('Penggunaan Statin (0: Tidak, 1: Ya)', [0, 1])
     antidiabetic_medications = st.selectbox('Penggunaan Obat Antidiabetes (0: Tidak, 1: Ya)', [0, 1])
     edema = st.selectbox('Edema (0: Tidak, 1: Ya)', [0, 1])
