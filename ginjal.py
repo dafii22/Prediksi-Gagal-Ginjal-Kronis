@@ -13,7 +13,7 @@ st.markdown("""
     <style>
     /* Mengatur tampilan utama */
     .stApp {
-        background-color: #f8f9fa;
+        background-color: #f8f9fa; /* Warna putih dengan sedikit abu-abu agar tidak terlalu mencolok */
         padding: 2rem;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -32,7 +32,7 @@ st.markdown("""
 
     /* Header */
     h1, h2, h3, h4, h5, h6 {
-        color: #212529;
+        color: #212529; /* Warna hitam pekat */
         text-align: center;
         font-size: 26px;
         font-weight: bold;
@@ -55,7 +55,7 @@ st.markdown("""
 
     /* Gaya tombol */
     .stButton>button {
-        background-color: #007bff;
+        background-color: #007bff; /* Warna biru cerah */
         color: white;
         font-size: 18px;
         font-weight: bold;
@@ -69,7 +69,7 @@ st.markdown("""
 
     /* Efek hover tombol */
     .stButton>button:hover {
-        background-color: #0056b3;
+        background-color: #0056b3; /* Warna biru lebih gelap saat hover */
         transform: scale(1.05);
     }
 
@@ -85,24 +85,6 @@ st.markdown("""
     .stCheckbox, .stRadio {
         font-size: 18px;
         color: #212529;
-    }
-
-    /* Gaya Selectbox */
-    .stSelectbox div[data-baseweb="select"] {
-        color: #212529 !important;
-        font-size: 18px;
-        font-family: 'Arial', sans-serif;
-    }
-
-    /* Gaya untuk pilihan dalam Selectbox */
-    .stSelectbox div[data-baseweb="select"] div {
-        background-color: #ffffff !important;
-        color: #212529 !important;
-    }
-
-    /* Dropdown items */
-    .stSelectbox div[data-baseweb="select"] span {
-        color: #212529 !important;
     }
 
     </style>
