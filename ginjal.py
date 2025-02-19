@@ -5,7 +5,10 @@ import streamlit as st
 # Load model yang telah disimpan
 model = joblib.load('rf.sav')
 
-# Tambahkan CSS untuk tampilan yang lebih menarik
+# Atur layout agar lebih lebar
+st.set_page_config(layout="wide")
+
+# Tambahkan CSS untuk full screen + desain kustom
 st.markdown("""
     <style>
     .stApp {
@@ -13,8 +16,13 @@ st.markdown("""
         padding: 2rem;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        max-width: 800px;
-        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+    .block-container {
+        padding: 2rem;
     }
     h1 {
         color: #004b8d;
@@ -22,7 +30,7 @@ st.markdown("""
     }
     label {
         font-weight: bold;
-        color: #333333;
+        color: #ffffff;
     }
     .stButton>button {
         background-color: #004b8d;
