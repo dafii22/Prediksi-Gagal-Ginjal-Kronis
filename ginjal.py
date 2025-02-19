@@ -87,22 +87,29 @@ st.markdown("""
         color: #212529;
     }
 
-        /* Gaya Selectbox */
-    .stSelectbox div[data-baseweb="select"] {
+            /* Gaya utama Selectbox */
+    .stSelectbox div[data-baseweb="select"] * {
         color: #ffffff !important; /* Warna teks putih */
-        font-size: 18px;
-        font-family: 'Arial', sans-serif;
+        font-size: 18px !important;
+        font-family: 'Arial', sans-serif !important;
     }
 
-    /* Gaya untuk pilihan dalam Selectbox */
-    .stSelectbox div[data-baseweb="select"] div {
-        background-color: #333333 !important; /* Latar belakang gelap */
-        color: #ffffff !important; /* Warna teks putih */
+    /* Gaya untuk daftar dropdown */
+    .stSelectbox div[data-baseweb="popover"] {
+        background-color: #333333 !important; /* Latar belakang dropdown */
     }
 
-    /* Dropdown items */
-    .stSelectbox div[data-baseweb="select"] span {
-        color: #ffffff !important; /* Warna teks putih dalam dropdown */
+    /* Gaya untuk setiap opsi dalam dropdown */
+    .stSelectbox div[data-baseweb="option"] {
+        color: #ffffff !important; /* Warna teks putih untuk opsi */
+        background-color: #444444 !important; /* Latar belakang opsi */
+        padding: 10px !important;
+        font-size: 18px !important;
+    }
+
+    /* Gaya hover pada opsi dropdown */
+    .stSelectbox div[data-baseweb="option"]:hover {
+        background-color: #0056b3 !important; /* Warna biru saat hover */
     }
 
     </style>
