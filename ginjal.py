@@ -11,47 +11,85 @@ st.set_page_config(layout="wide")
 # Tambahkan CSS untuk full screen + desain kustom
 st.markdown("""
     <style>
+    /* Mengatur tampilan utama */
     .stApp {
-        background-color: #ffffff;
+        background-color: #f8f9fa; /* Warna putih dengan sedikit abu-abu agar tidak terlalu mencolok */
         padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         width: 100vw;
         height: 100vh;
         margin: 0;
         overflow: hidden;
     }
+
+    /* Kontainer utama */
     .block-container {
         padding: 2rem;
+        max-width: 800px;
+        margin: auto;
     }
+
+    /* Header */
     h1, h2, h3, h4, h5, h6 {
-        color: #000000;
+        color: #212529; /* Warna hitam pekat */
         text-align: center;
-        font-size: 24px;
+        font-size: 26px;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
     }
+
+    /* Label teks */
     label {
         font-weight: bold;
-        color: #000000;
+        color: #333333;
         font-size: 18px;
     }
+
+    /* Teks utama */
+    body, p, div, span {
+        color: #212529;
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Gaya tombol */
     .stButton>button {
-        background-color: #004b8d;
+        background-color: #007bff; /* Warna biru cerah */
         color: white;
         font-size: 18px;
+        font-weight: bold;
         padding: 12px 24px;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     }
+
+    /* Efek hover tombol */
     .stButton>button:hover {
-        background-color: #003366;
+        background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+        transform: scale(1.05);
     }
-    body, p, div, span {
-        color: #000000;
+
+    /* Kotak input */
+    .stTextInput>div>div>input {
+        border: 2px solid #007bff;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Checkbox & Radio button */
+    .stCheckbox, .stRadio {
         font-size: 18px;
+        color: #212529;
     }
+
     </style>
 """, unsafe_allow_html=True)
+
 
 # Judul aplikasi
 st.title("Prediksi Penyakit Gagal Ginjal Kronis")
