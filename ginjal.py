@@ -8,14 +8,15 @@ model = joblib.load('rf.sav')
 # Atur layout agar lebih lebar
 st.set_page_config(layout="wide")
 
-# Tambahkan CSS untuk latar belakang gambar
+# Tambahkan CSS untuk full screen + desain kustom
 st.markdown("""
     <style>
-    /* Gunakan gambar sebagai background */
+    /* Mengatur tampilan utama */
     .stApp {
-        background: url("Gagal-Ginjal.jpg") no-repeat center center fixed;
-        background-size: cover;
+        background-color: #f8f9fa; /* Warna putih dengan sedikit abu-abu agar tidak terlalu mencolok */
         padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         width: 100vw;
         height: 100vh;
         margin: 0;
@@ -27,22 +28,26 @@ st.markdown("""
         padding: 2rem;
         max-width: 800px;
         margin: auto;
-        background: rgba(255, 255, 255, 0.85); /* Latar belakang putih transparan */
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    /* Heading */
+    /* Header */
     h1, h2, h3, h4, h5, h6 {
-        color: #212529;
+        color: #212529; /* Warna hitam pekat */
         text-align: center;
         font-size: 26px;
         font-weight: bold;
         font-family: 'Arial', sans-serif;
     }
 
+    /* Label teks */
+    label {
+        font-weight: bold;
+        color: #333333;
+        font-size: 18px;
+    }
+
     /* Teks utama */
-    p, div, span {
+    body, p, div, span {
         color: #212529;
         font-size: 18px;
         font-family: 'Arial', sans-serif;
@@ -50,7 +55,7 @@ st.markdown("""
 
     /* Gaya tombol */
     .stButton>button {
-        background-color: #007bff;
+        background-color: #007bff; /* Warna biru cerah */
         color: white;
         font-size: 18px;
         font-weight: bold;
@@ -64,12 +69,27 @@ st.markdown("""
 
     /* Efek hover tombol */
     .stButton>button:hover {
-        background-color: #0056b3;
+        background-color: #0056b3; /* Warna biru lebih gelap saat hover */
         transform: scale(1.05);
+    }
+
+    /* Kotak input */
+    .stTextInput>div>div>input {
+        border: 2px solid #007bff;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Checkbox & Radio button */
+    .stCheckbox, .stRadio {
+        font-size: 18px;
+        color: #212529;
     }
 
     </style>
 """, unsafe_allow_html=True)
+
 
 
 # Judul aplikasi
