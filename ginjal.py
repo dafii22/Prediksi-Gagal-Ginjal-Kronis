@@ -52,7 +52,7 @@ with col1:
     education_level = st.selectbox('Tingkat Pendidikan (0-3)', [0, 1, 2, 3])
     BMI = st.number_input('Indeks Massa Tubuh (BMI)', min_value=15.0, max_value=40.0, format="%.2f")
     smoking = st.selectbox('Merokok (0: Tidak, 1: Ya)', [0, 1])
-    alcohol_consumption = st.selectbox('Konsumsi Alkohol (0-20)', min_value=0, max_value=20)
+    alcohol_consumption = st.selectbox('Konsumsi Alkohol (0-20)', min_value=0.0, max_value=20.0, format="%.2f")
     physical_activity = st.number_input('Frekuensi Aktivitas Fisik per Minggu (0-10)', min_value=0, max_value=10)
     diet_quality = st.number_input('Kualitas Pola Makan (0-10)', min_value=0, max_value=10)
     sleep_quality = st.number_input('Kualitas Tidur (4-10)', min_value=4, max_value=10)
