@@ -95,7 +95,7 @@ with col2:
     heavy_metals_exposure = st.selectbox('Paparan Logam Berat (0: Tidak, 1: Ya)', [0, 1])
     occupational_exposure_chemicals = st.selectbox('Paparan Kimia di Tempat Kerja (0: Tidak, 1: Ya)', [0, 1])
     water_quality = st.selectbox('Kualitas Air (0: Baik, 1: Buruk)', [0, 1])
-    medical_checkups_frequency = st.number_input('Frekuensi Pemeriksaan Medis per Tahun (0-4)', min_value=0)
+    medical_checkups_frequency = st.number_input('Frekuensi Pemeriksaan Medis per Tahun (0-4)', min_value=0, max_value=4)
     medication_adherence = st.number_input('Kepatuhan Pengobatan (0-10)', min_value=0, max_value=10)
     health_literacy = st.number_input('Literasi Kesehatan (0-10)', min_value=0, max_value=10)
 
